@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+    <rect width="64" height="64" rx="14" fill="#fff3e0"/>
+    <!-- Mixer Drum Orange/Yellow -->
+    <path d="M24 24 L38 18 L46 30 L38 42 L24 38 Z" fill="#f57c00"/>
+    <circle cx="44" cy="29" r="4" fill="#e65100"/>
+    <!-- Chassis / Wheels -->
+    <path d="M22 36 L16 48 M34 40 L34 48 M14 48 L38 48" stroke="#37474f" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="18" cy="48" r="4.5" fill="#263238"/>
+    <circle cx="18" cy="48" r="2" fill="#ffb74d"/>
+    <circle cx="36" cy="48" r="4.5" fill="#263238"/>
+    <circle cx="36" cy="48" r="2" fill="#ffb74d"/>
+  </svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+    <rect width="64" height="64" rx="14" fill="#e8eaf6"/>
+    <!-- Schmidt Concrete Rebound Test Hammer Silver/Blue -->
+    <rect x="20" y="28" width="28" height="8" rx="2" fill="#5c6bc0"/>
+    <rect x="12" y="30" width="8" height="4" rx="1" fill="#78909c"/>
+    <circle cx="11" cy="32" r="2" fill="#37474f"/>
+    <rect x="48" y="27" width="5" height="10" rx="1.5" fill="#283593"/>
+    <!-- Scale Window -->
+    <rect x="26" y="30" width="14" height="4" rx="1" fill="#e8eaf6"/>
+    <path d="M29 30 L29 34 M33 30 L33 34 M37 30 L37 34" stroke="#1a237e" stroke-width="1"/>
+  </svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+    <rect width="64" height="64" rx="14" fill="#f3e5f5"/>
+    <!-- Stainless Steel Stanchions with Red Belt -->
+    <!-- Left Pole -->
+    <rect x="16" y="18" width="4" height="32" fill="#90a4ae"/>
+    <ellipse cx="18" cy="18" rx="4" ry="2" fill="#cfd8dc"/>
+    <ellipse cx="18" cy="50" rx="8" ry="3" fill="#607d8b"/>
+    <!-- Right Pole -->
+    <rect x="44" y="18" width="4" height="32" fill="#90a4ae"/>
+    <ellipse cx="46" cy="18" rx="4" ry="2" fill="#cfd8dc"/>
+    <ellipse cx="46" cy="50" rx="8" ry="3" fill="#607d8b"/>
+    <!-- Retractable Red Belt -->
+    <path d="M18 22 C28 26, 36 26, 46 22 L46 26 C36 30, 28 30, 18 26 Z" fill="#d32f2f"/>
+  </svg>

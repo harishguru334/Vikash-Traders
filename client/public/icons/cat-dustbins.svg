@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+    <rect width="64" height="64" rx="14" fill="#e8f5e9"/>
+    <!-- Blue Bin -->
+    <path d="M16 22 L20 50 A2 2 0 0 0 22 52 L30 52 A2 2 0 0 0 32 50 L36 22 Z" fill="#1976d2"/>
+    <path d="M14 18 L38 18 A2 2 0 0 1 40 20 L40 22 L12 22 L12 20 A2 2 0 0 1 14 18 Z" fill="#0d47a1"/>
+    <circle cx="21" cy="51" r="3.5" fill="#37474f"/>
+    <!-- Green Bin -->
+    <path d="M30 20 L34 48 A2 2 0 0 0 36 50 L44 50 A2 2 0 0 0 46 48 L50 20 Z" fill="#2e7d32"/>
+    <path d="M28 16 L52 16 A2 2 0 0 1 54 18 L54 20 L26 20 L26 18 A2 2 0 0 1 28 16 Z" fill="#1b5e20"/>
+    <circle cx="45" cy="49" r="3.5" fill="#37474f"/>
+    <path d="M38 28 L42 28 M37 34 L43 34 M38 40 L42 40" stroke="#a5d6a7" stroke-width="1.5" stroke-linecap="round"/>
+  </svg>

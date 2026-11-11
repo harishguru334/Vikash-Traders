@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="450" fill="url(#bg4)"/>
+  <rect y="330" width="600" height="120" fill="#1e293b"/>
+  <!-- Concrete Mixer Model -->
+  <g transform="translate(120, 100)">
+    <!-- Chassis / Stand -->
+    <path d="M50 240 L130 90 L260 90 L310 240" stroke="#b45309" stroke-width="12" fill="none" stroke-linecap="round"/>
+    <line x1="40" y1="240" x2="330" y2="240" stroke="#78350f" stroke-width="12"/>
+    <!-- Drum -->
+    <path d="M120 160 L180 80 L240 80 L280 160 L240 210 L160 210 Z" fill="#d97706"/>
+    <circle cx="200" cy="145" r="45" fill="#f59e0b"/>
+    <circle cx="200" cy="145" r="20" fill="#451a03"/>
+    <!-- Wheels -->
+    <circle cx="70" cy="245" r="28" fill="#111827"/>
+    <circle cx="70" cy="245" r="12" fill="#9ca3af"/>
+    <circle cx="290" cy="245" r="28" fill="#111827"/>
+    <circle cx="290" cy="245" r="12" fill="#9ca3af"/>
+    <!-- Tow bar -->
+    <line x1="290" y1="230" x2="360" y2="200" stroke="#b45309" stroke-width="8" stroke-linecap="round"/>
+  </g>
+  <rect x="25" y="25" width="220" height="34" rx="17" fill="rgba(255,255,255,0.12)"/>
+  <text x="40" y="47" fill="#ffffff" font-family="sans-serif" font-size="13" font-weight="600">Site Concrete Mixer - Loaded</text>
+</svg>
