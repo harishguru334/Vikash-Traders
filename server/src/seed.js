@@ -15,14 +15,15 @@ import SiteSetting from './models/SiteSetting.js';
 dotenv.config();
 
 const INITIAL_CATEGORIES = [
-  { name: 'Outdoor Exercise Gym Equipment', slug: 'outdoor-exercise-gym-equipment', description: 'Institutional outdoor park fitness stations, double air walkers, waist twisters, and shoulder builders.', icon: '🏋️', displayOrder: 1 },
-  { name: 'Plastic Dust Bins', slug: 'plastic-dust-bins', description: 'Commercial HDPE wheelie bins (60L, 100L, 120L, 240L, 1100L) with heavy UV-stabilized virgin polymer.', icon: '🗑️', displayOrder: 2 },
-  { name: 'Cleaning Machines', slug: 'cleaning-machines', description: 'Heavy-duty industrial wet & dry vacuum machines and commercial high-pressure washers.', icon: '🧹', displayOrder: 3 },
-  { name: 'Queue Stands', slug: 'queue-stands', description: 'Stainless steel retractable belt stanchions, velvet rope posts, and crowd guidance barriers.', icon: '🚧', displayOrder: 4 },
-  { name: 'Concrete Mixer Machines', slug: 'concrete-mixer-machines', description: '10/7 CFT heavy drum concrete mixers with diesel engine and electric motor options.', icon: '⚙️', displayOrder: 5 },
-  { name: 'Concrete Test Hammer', slug: 'concrete-test-hammer', description: 'Non-destructive rebound test hammers for on-site concrete compressive strength verification.', icon: '🔨', displayOrder: 6 },
-  { name: 'Shoe Polish Machine', slug: 'shoe-polish-machine', description: 'Infrared auto-sensor commercial shoe shining stations for hotels, corporate towers, and airports.', icon: '👞', displayOrder: 7 },
-  { name: 'Scrubbing & Polishing Machine', slug: 'scrubbing-polishing-machine', description: 'Single-disc high torque floor scrubbers and burnishers for marble, granite, and epoxy flooring.', icon: '✨', displayOrder: 8 },
+  { name: 'Road Safety Equipment (ROADNEX™)', slug: 'road-safety-equipment-roadnex', description: 'Flagship ROADNEX brand traffic cones, rubber speed bumps, convex safety mirrors, solar road studs, spring posts, corner guards, and reflective delineators.', icon: '🚧', displayOrder: 1 },
+  { name: 'Outdoor Exercise Gym Equipment', slug: 'outdoor-exercise-gym-equipment', description: 'Institutional outdoor park fitness stations, double air walkers, waist twisters, and shoulder builders.', icon: '🏋️', displayOrder: 2 },
+  { name: 'Plastic Dust Bins', slug: 'plastic-dust-bins', description: 'Commercial HDPE wheelie bins (60L, 100L, 120L, 240L, 1100L) with heavy UV-stabilized virgin polymer.', icon: '🗑️', displayOrder: 3 },
+  { name: 'Cleaning Machines', slug: 'cleaning-machines', description: 'Heavy-duty industrial wet & dry vacuum machines and commercial high-pressure washers.', icon: '🧹', displayOrder: 4 },
+  { name: 'Queue Stands', slug: 'queue-stands', description: 'Stainless steel retractable belt stanchions, velvet rope posts, and crowd guidance barriers.', icon: '🚧', displayOrder: 5 },
+  { name: 'Concrete Mixer Machines', slug: 'concrete-mixer-machines', description: '10/7 CFT heavy drum concrete mixers with diesel engine and electric motor options.', icon: '⚙️', displayOrder: 6 },
+  { name: 'Concrete Test Hammer', slug: 'concrete-test-hammer', description: 'Non-destructive rebound test hammers for on-site concrete compressive strength verification.', icon: '🔨', displayOrder: 7 },
+  { name: 'Shoe Polish Machine', slug: 'shoe-polish-machine', description: 'Infrared auto-sensor commercial shoe shining stations for hotels, corporate towers, and airports.', icon: '👞', displayOrder: 8 },
+  { name: 'Scrubbing & Polishing Machine', slug: 'scrubbing-polishing-machine', description: 'Single-disc high torque floor scrubbers and burnishers for marble, granite, and epoxy flooring.', icon: '✨', displayOrder: 9 },
 ];
 
 const INITIAL_WHY_US = [

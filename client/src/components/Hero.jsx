@@ -153,19 +153,19 @@ export default function Hero({ products = [] }) {
               className="
                 inline-flex
                 items-center
-                gap-2
+                gap-2.5
                 rounded-full
                 border
-                border-emerald-200
-                bg-emerald-50
+                border-amber-300
+                bg-amber-50/90
                 px-3.5
                 py-2
                 text-[11px]
                 font-bold
                 uppercase
                 tracking-[0.12em]
-                text-emerald-700
-                shadow-sm
+                text-amber-900
+                shadow-xs
               "
             >
               <span
@@ -174,13 +174,13 @@ export default function Hero({ products = [] }) {
                   h-2
                   w-2
                   rounded-full
-                  bg-emerald-500
-                  shadow-[0_0_0_4px_rgba(16,185,129,0.08)]
+                  bg-amber-500
+                  shadow-[0_0_0_4px_rgba(245,158,11,0.2)]
                 "
               />
 
               <span>
-                Direct B2B Industrial Sourcing · Rajasthan
+                Flagship ROADNEX™ Road Safety &amp; Municipal Sourcing
               </span>
             </div>
 
@@ -198,9 +198,9 @@ export default function Hero({ products = [] }) {
                 lg:text-6xl
               "
             >
-              Commercial &amp; Municipal Equipment{' '}
+              Road Safety Infrastructure &amp;{' '}
               <span className="text-emerald-600">
-                Directly from the Stockyard
+                Municipal Equipment Hub
               </span>
             </h1>
 
@@ -216,10 +216,9 @@ export default function Hero({ products = [] }) {
                 sm:leading-8
               "
             >
-              Government and commercial-grade supplier of heavy-duty
-              cleaning machines, HDPE waste containers, institutional
-              outdoor gym stations, and construction equipment with official
-              GST tax invoicing.
+              Direct institutional supplier of <strong className="font-semibold text-slate-900">ROADNEX™ road safety equipment</strong>,
+              heavy-duty HDPE waste containers, mechanized cleaning machines,
+              outdoor gym stations, and site machinery with verified GST tax invoicing.
             </p>
 
             {/* CTAs */}
@@ -738,9 +737,9 @@ export default function Hero({ products = [] }) {
             />
 
             <Stat
-              value={categoryCount || 8}
+              value={categoryCount || 9}
               label="Equipment Categories"
-              sub="Gym, Bins, Cleaners &amp; Mixers"
+              sub="ROADNEX Road Safety, Bins &amp; Cleaners"
             />
 
             <Stat

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <rect width="64" height="64" rx="14" fill="#fff3e0"/>
+  <!-- Traffic Cone Base -->
+  <polygon points="12,52 52,52 48,46 16,46" fill="#263238"/>
+  <!-- Orange Cone Body -->
+  <polygon points="20,46 44,46 36,12 28,12" fill="#ff6d00"/>
+  <!-- White Reflective Stripes -->
+  <polygon points="22.5,40 41.5,40 39.5,33 24.5,33" fill="#ffffff"/>
+  <polygon points="26,27 38,27 36.5,21 27.5,21" fill="#ffffff"/>
+  <!-- Safety Beacon / Top -->
+  <ellipse cx="32" cy="12" rx="4" ry="2" fill="#ff9100"/>
+  <!-- Roadnex Safety Spark / Reflection Accent -->
+  <circle cx="48" cy="18" r="3" fill="#ffd600"/>
+  <path d="M48 12 L48 24 M42 18 L54 18" stroke="#ffab00" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
+

@@ -1,6 +1,12 @@
 
 const industries = [
   {
+    title: 'Highways, Roads & Traffic Authorities',
+    badge: 'ROADNEX™ Road Safety',
+    icon: 'roadsafety',
+    body: 'Highway developers, smart cities, and traffic divisions procuring ROADNEX™ cones, speed humps, convex mirrors, solar road studs, and delineators.',
+  },
+  {
     title: 'Municipal Corporations & Civic Bodies',
     badge: 'Civic Hygiene',
     icon: 'building',
@@ -49,6 +55,17 @@ function IndustryIcon({ type }) {
     strokeLinecap: 'round',
     strokeLinejoin: 'round',
   };
+
+  if (type === 'roadsafety') {
+    return (
+      <svg {...iconProps}>
+        <polygon points="4 20 20 20 18 17 6 17" />
+        <polygon points="8 17 16 17 14 4 10 4" />
+        <line x1="9" y1="12" x2="15" y2="12" />
+        <line x1="9.5" y1="8" x2="14.5" y2="8" />
+      </svg>
+    );
+  }
 
   if (type === 'building') {
     return (

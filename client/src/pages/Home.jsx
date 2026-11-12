@@ -1,6 +1,7 @@
 
 import { useCallback, useEffect, useState } from 'react';
 import api, { apiError } from '../api/client.js';
+import { DEFAULT_PRODUCTS } from '../site.js';
 import useReveal from '../hooks/useReveal.js';
 
 import Header from '../components/Header.jsx';
@@ -32,17 +33,17 @@ export default function Home() {
       .get('/products')
       .then((res) => {
         if (alive) {
-          setProducts(res.data);
+          if (Array.isArray(res.data) && res.data.length > 0) {
+            setProducts(res.data);
+          } else {
+            setProducts(DEFAULT_PRODUCTS);
+          }
         }
       })
       .catch((err) => {
         if (alive) {
-          setError(
-            apiError(
-              err,
-              'Could not load the catalogue. Call us for current rates.'
-            )
-          );
+          // Gracefully fallback to verified default catalogue
+          setProducts(DEFAULT_PRODUCTS);
         }
       })
       .finally(() => {

@@ -4,6 +4,14 @@ import { BUSINESS } from '../site.js';
 
 const PRODUCT_FAMILIES = [
   {
+    name: 'Road Safety Equipment',
+    brand: 'ROADNEX™',
+    desc: 'Traffic cones, speed breakers, convex mirrors & road studs',
+    icon: '/icons/cat-roadsafety.svg',
+    target: 'Road Safety Equipment (ROADNEX™)',
+    highlight: true,
+  },
+  {
     name: 'Plastic Dust Bins',
     desc: '5L to 100L open-top, pedal & wheeled heavy bins',
     icon: '/icons/cat-dustbins.svg',
@@ -385,8 +393,13 @@ export default function Header() {
 
                           <div className="min-w-0 flex-1">
                             <div className="flex items-start justify-between gap-2">
-                              <span className="text-sm font-semibold leading-5 text-slate-900">
+                              <span className="flex items-center gap-1.5 text-sm font-semibold leading-5 text-slate-900">
                                 {family.name}
+                                {family.brand && (
+                                  <span className="rounded-md bg-amber-500/10 px-1.5 py-0.5 text-[10px] font-bold tracking-wide text-amber-700 ring-1 ring-inset ring-amber-500/20">
+                                    {family.brand}
+                                  </span>
+                                )}
                               </span>
 
                               <span
@@ -567,11 +580,16 @@ export default function Header() {
               {PRODUCT_FAMILIES.map((family) => (
                 <a
                   key={family.name}
-                  className="block rounded-xl px-4 py-2.5 text-sm text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900"
+                  className="flex items-center justify-between rounded-xl px-4 py-2.5 text-sm text-slate-600 transition-colors hover:bg-slate-50 hover:text-slate-900"
                   href="#products"
                   onClick={closeAll}
                 >
-                  {family.name}
+                  <span>{family.name}</span>
+                  {family.brand && (
+                    <span className="rounded-md bg-amber-100 px-1.5 py-0.5 text-[10px] font-bold text-amber-800">
+                      {family.brand}
+                    </span>
+                  )}
                 </a>
               ))}
             </div>

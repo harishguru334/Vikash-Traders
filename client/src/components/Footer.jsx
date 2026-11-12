@@ -162,9 +162,9 @@ export default function Footer({ products = [] }) {
                 text-slate-400
               "
             >
-              Direct supplier and stockyard of commercial cleaning machines,
-              plastic dustbins, open-gym stations, queue stanchions, and
-              construction machinery across Rajasthan.
+              Direct supplier and stockyard of ROADNEX™ road safety solutions,
+              commercial plastic dustbins, cleaning machines, open-gym stations,
+              and project equipment across India.
             </p>
 
             {/* GST badge */}

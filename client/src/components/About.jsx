@@ -122,11 +122,12 @@ export default function About() {
                 sm:text-lg sm:leading-8
               "
             >
-              Since {BUSINESS.gstYear}, Vikash Traders has been at the forefront of
-              supplying premium-quality commercial plastic dustbins, mechanized
-              floor cleaning machines, open-gym exercise stations, and construction
-              equipment that help create cleaner, healthier and more sustainable
-              environments across Rajasthan.
+              Since {BUSINESS.gstYear}, Vikash Traders has been a trusted supplier of
+              high-performance commercial equipment. Today, we are proud to introduce
+              our flagship road safety division under our applied proprietary brand{' '}
+              <strong className="font-semibold text-slate-900">ROADNEX™</strong>, alongside
+              premium commercial plastic dustbins, mechanized floor cleaning machines,
+              open-gym fitness stations, and civil infrastructure equipment.
             </p>
 
             {/* Secondary paragraph */}
@@ -140,9 +141,10 @@ export default function About() {
             >
               Based in Kankarwala, Lunkaransar (Bikaner division) under the direct
               leadership of proprietor V. Kumar, we eliminate speculative middle
-              tiers by holding physical inventory in our central stockyard and
-              dispatching verified orders directly to municipal councils, hospitals,
-              schools and infrastructure contractors.
+              tiers by holding physical inventory in our central stockyard. With our brand
+              ROADNEX™ applied for trademark registration (expected in 2–3 months), we supply verified
+              traffic safety products and civic machinery directly to defence institutions,
+              railways, municipal councils, hospitals, and national infrastructure contractors.
             </p>
 
             {/* CTAs */}
