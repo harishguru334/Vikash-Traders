@@ -267,26 +267,67 @@ export default function Clients() {
                 Specialized in heavy-duty road safety and traffic infrastructure.
               </p>
 
-              {/* Road safety product pills */}
-              <div className="mt-5 flex flex-wrap gap-2 text-xs font-semibold text-slate-700">
-                <span className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 shadow-xs">
-                  <span className="text-amber-500">🚧</span> Traffic Cones (Reflective)
-                </span>
-                <span className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 shadow-xs">
-                  <span className="text-amber-500">🛑</span> Rubber Speed Bumps
-                </span>
-                <span className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 shadow-xs">
-                  <span className="text-amber-500">🔍</span> Convex Traffic Mirrors
-                </span>
-                <span className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 shadow-xs">
-                  <span className="text-amber-500">💡</span> Solar LED Road Studs
-                </span>
-                <span className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 shadow-xs">
-                  <span className="text-amber-500">🛡️</span> Spring Posts &amp; Delineators
-                </span>
-                <span className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 shadow-xs">
-                  <span className="text-amber-500">🧱</span> Wheel Stoppers &amp; Corner Guards
-                </span>
+              {/* Visual preview grid of real ROADNEX products */}
+              <div className="mt-6 grid grid-cols-2 gap-3 sm:grid-cols-4">
+                <div className="group/item overflow-hidden rounded-xl border border-amber-200/80 bg-white p-1.5 shadow-xs transition-all hover:border-amber-400">
+                  <div className="aspect-square overflow-hidden rounded-lg bg-slate-100">
+                    <img
+                      src="/photos/roadnex-traffic-cones.jpg"
+                      alt="ROADNEX Reflective Traffic Cones"
+                      loading="lazy"
+                      className="h-full w-full object-cover transition-transform duration-300 group-hover/item:scale-105"
+                    />
+                  </div>
+                  <div className="mt-1.5 px-1 text-center">
+                    <div className="text-[11px] font-bold text-slate-900 leading-tight">Traffic Cones</div>
+                    <div className="text-[10px] text-amber-700 font-semibold">Reflective Sleeve</div>
+                  </div>
+                </div>
+
+                <div className="group/item overflow-hidden rounded-xl border border-amber-200/80 bg-white p-1.5 shadow-xs transition-all hover:border-amber-400">
+                  <div className="aspect-square overflow-hidden rounded-lg bg-slate-100">
+                    <img
+                      src="/photos/roadnex-speed-bump.jpg"
+                      alt="ROADNEX Rubber Speed Bumps"
+                      loading="lazy"
+                      className="h-full w-full object-cover transition-transform duration-300 group-hover/item:scale-105"
+                    />
+                  </div>
+                  <div className="mt-1.5 px-1 text-center">
+                    <div className="text-[11px] font-bold text-slate-900 leading-tight">Speed Bumps</div>
+                    <div className="text-[10px] text-amber-700 font-semibold">40-Ton Rated</div>
+                  </div>
+                </div>
+
+                <div className="group/item overflow-hidden rounded-xl border border-amber-200/80 bg-white p-1.5 shadow-xs transition-all hover:border-amber-400">
+                  <div className="aspect-square overflow-hidden rounded-lg bg-slate-100">
+                    <img
+                      src="/photos/roadnex-convex-mirror.jpg"
+                      alt="ROADNEX Convex Safety Mirrors"
+                      loading="lazy"
+                      className="h-full w-full object-cover transition-transform duration-300 group-hover/item:scale-105"
+                    />
+                  </div>
+                  <div className="mt-1.5 px-1 text-center">
+                    <div className="text-[11px] font-bold text-slate-900 leading-tight">Convex Mirrors</div>
+                    <div className="text-[10px] text-amber-700 font-semibold">130° Wide Angle</div>
+                  </div>
+                </div>
+
+                <div className="group/item overflow-hidden rounded-xl border border-amber-200/80 bg-white p-1.5 shadow-xs transition-all hover:border-amber-400">
+                  <div className="aspect-square overflow-hidden rounded-lg bg-slate-100">
+                    <img
+                      src="/photos/roadnex-solar-stud.jpg"
+                      alt="ROADNEX Solar LED Road Studs"
+                      loading="lazy"
+                      className="h-full w-full object-cover transition-transform duration-300 group-hover/item:scale-105"
+                    />
+                  </div>
+                  <div className="mt-1.5 px-1 text-center">
+                    <div className="text-[11px] font-bold text-slate-900 leading-tight">Solar Studs</div>
+                    <div className="text-[10px] text-amber-700 font-semibold">Heavy Aluminium</div>
+                  </div>
+                </div>
               </div>
             </div>
 

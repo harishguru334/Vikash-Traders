@@ -57,8 +57,8 @@ export default function WhyChooseUs() {
       ),
     },
     {
-      title: 'Eco-Friendly & EN-840 Norms',
-      desc: '100% recyclable virgin HDPE bins and energy-efficient commercial sanitation solutions matching national municipal norms.',
+      title: 'ROADNEX™ Road Safety & EN-840 Standards',
+      desc: 'MoRTH compliant road safety products under our ROADNEX™ brand alongside EN-840 certified HDPE bins and equipment matching national standards.',
       icon: (
         <svg
           className="h-6 w-6"

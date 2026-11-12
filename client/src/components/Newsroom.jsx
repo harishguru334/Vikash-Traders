@@ -1,28 +1,28 @@
 
 const updates = [
   {
-    tag: 'CIVIC DISPATCH',
+    tag: 'HIGHWAY & TRANSIT DISPATCH',
     num: '01',
-    img: '/photos/why-yellow-bin.jpg',
-    date: 'OCTOBER 2026',
-    title: 'Bulk Commercial Waste Bins Dispatched for Municipal Sanitation Upgrades',
-    desc: 'Supply of heavy-duty 50L to 100L HDPE pedal and wheeled bins with Swachh Bharat color-coding and full GST audit paperwork.',
+    img: '/photos/roadnex-traffic-cones.jpg',
+    date: 'NOVEMBER 2026',
+    title: 'Flagship ROADNEX™ Road Safety & Traffic Infrastructure Deployment Across Highway Corridors',
+    desc: 'Bulk dispatch of ROADNEX™ high-visibility reflective traffic cones, 40-ton modular rubber speed bumps, and solar LED road studs for highway security and institutional checkpoints.',
   },
   {
-    tag: 'COMMERCIAL HANDOVER',
+    tag: 'PERIMETER INFRASTRUCTURE',
     num: '02',
-    img: '/photos/fiable-hero-equipment.jpg',
-    date: 'SEPTEMBER 2026',
-    title: 'Mechanized Floor Scrubbers & Wet/Dry Vacuums Deployed to Commercial Complexes',
-    desc: 'Industrial cleaning machines dispatched to facilities in Bikaner and surrounding districts for large-area mechanized floor care.',
+    img: '/photos/roadnex-hero-infrastructure.jpg',
+    date: 'OCTOBER 2026',
+    title: 'Entrance Checkpoint Speed Calming & Safety Barrier Handover',
+    desc: 'Installation of vulcanized rubber speed breakers, boom gates, and convex traffic safety mirrors at institutional and industrial checkpoints.',
   },
   {
-    tag: 'PUBLIC INFRASTRUCTURE',
+    tag: 'CIVIC SANITATION & MUNICIPAL',
     num: '03',
-    img: '/photos/about-facility-stockyard.jpg',
-    date: 'AUGUST 2026',
-    title: 'Outdoor Gym Exercise Stations Delivered to Public Parks & Gram Panchayats',
-    desc: 'Installed all-weather air walkers, waist twisters and pull-down stations designed for open civic community parks.',
+    img: '/photos/why-yellow-bin.jpg',
+    date: 'SEPTEMBER 2026',
+    title: 'Heavy Commercial HDPE Waste Bins Delivered for Municipal Upgrades',
+    desc: 'Supply of heavy-duty 120L and 240L HDPE wheeled bins with Swachh Bharat color-coding and full GST audit paperwork.',
   },
 ];
 

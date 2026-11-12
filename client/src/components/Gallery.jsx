@@ -3,11 +3,68 @@ import { useState } from 'react';
 
 const galleryPhotos = [
   {
-    src: '/photos/fiable-hero-equipment.jpg',
-    category: 'Equipment',
-    title: 'Commercial Sanitation Lineup',
+    src: '/photos/roadnex-traffic-cones.jpg',
+    category: 'Road Safety (ROADNEX™)',
+    title: 'ROADNEX™ Prismatic Reflective Traffic Cones',
     caption:
-      'Pedal bins, heavy wheeled dustbins, and mechanized scrubbers staged for institutional delivery.',
+      'High-density virgin rubber 750mm and 1000mm traffic cones with dual prismatic 3M reflective sleeves staged for highway procurement.',
+    badge: 'ROADNEX™ Flagship',
+  },
+  {
+    src: '/photos/roadnex-speed-bump.jpg',
+    category: 'Road Safety (ROADNEX™)',
+    title: 'ROADNEX™ Heavy Modular Speed Bumps',
+    caption:
+      '40-ton axle load capacity vulcanized rubber speed breakers with integrated cat-eye glass reflectors and non-skid diamond traction.',
+    badge: '40-Ton Rated',
+  },
+  {
+    src: '/photos/roadnex-hero-infrastructure.jpg',
+    category: 'Road Safety (ROADNEX™)',
+    title: 'ROADNEX™ Toll & Entrance Infrastructure',
+    caption:
+      'Entrance security setup with heavy rubber speed bump, boom barrier, and high-visibility yellow caution flashers.',
+    badge: 'Infrastructure',
+  },
+  {
+    src: '/photos/roadnex-convex-mirror.jpg',
+    category: 'Road Safety (ROADNEX™)',
+    title: 'ROADNEX™ Polycarbonate Convex Safety Mirrors',
+    caption:
+      'Unbreakable wide-angle 130° convex traffic mirrors with UV-resistant orange hooded backplates and heavy steel mounting brackets.',
+    badge: 'Wide-Angle 130°',
+  },
+  {
+    src: '/photos/roadnex-solar-stud.jpg',
+    category: 'Road Safety (ROADNEX™)',
+    title: 'ROADNEX™ Solar LED Aluminium Road Studs',
+    caption:
+      'Heavy cast-aluminium solar cat eyes with monocrystalline panels, dual ultra-bright LEDs, and 20-ton vehicular compression.',
+    badge: 'Solar Powered',
+  },
+  {
+    src: '/photos/roadnex-wheel-stopper.jpg',
+    category: 'Road Safety (ROADNEX™)',
+    title: 'ROADNEX™ Rubber Wheel Stoppers & Curbs',
+    caption:
+      'Heavy-duty vulcanized rubber parking curbs with high-visibility chevron yellow reflective panels for commercial bays.',
+    badge: 'Parking Safety',
+  },
+  {
+    src: '/photos/roadnex-road-barrier.jpg',
+    category: 'Road Safety (ROADNEX™)',
+    title: 'ROADNEX™ Water-Filled Safety Road Barriers',
+    caption:
+      'UV-stabilized virgin HDPE interlocking red/white water or sand-filled road dividers for highway diversions.',
+    badge: 'HDPE Barriers',
+  },
+  {
+    src: '/photos/roadnex-police-barricade.jpg',
+    category: 'Road Safety (ROADNEX™)',
+    title: 'ROADNEX™ Heavy Mobile Steel Police Barricades',
+    caption:
+      'Galvanized tubular steel security barricades on wheels with interlocking hooks and reflective caution signs.',
+    badge: 'Heavy Steel',
   },
   {
     src: '/photos/about-facility-stockyard.jpg',
@@ -19,9 +76,9 @@ const galleryPhotos = [
   {
     src: '/photos/why-yellow-bin.jpg',
     category: 'Bins',
-    title: 'Heavy-Duty UV Stabilized Bins',
+    title: 'Heavy-Duty UV Stabilized HDPE Bins',
     caption:
-      'Virgin HDPE commercial bins designed for extreme climate resistance and public durability.',
+      'Virgin HDPE commercial waste bins designed for extreme climate resistance and public municipal durability.',
   },
   {
     src: '/photos/open-gym-park.svg',
@@ -48,9 +105,10 @@ const galleryPhotos = [
 
 const categories = [
   'All',
+  'Road Safety (ROADNEX™)',
   'Stockyard',
-  'Equipment',
   'Bins',
+  'Equipment',
   'Gym',
   'Construction',
 ];
@@ -281,28 +339,23 @@ export default function Gallery() {
                   "
                 />
 
-                {/* Category badge */}
-                <span
-                  className="
-                    absolute
-                    left-4
-                    top-4
-                    rounded-full
-                    border
-                    border-white/40
-                    bg-slate-950/60
-                    px-3
-                    py-1.5
-                    text-[10px]
-                    font-bold
-                    uppercase
-                    tracking-[0.12em]
-                    text-white
-                    backdrop-blur-md
-                  "
-                >
-                  {item.category}
-                </span>
+                {/* Category & Feature badge */}
+                <div className="absolute left-4 top-4 flex flex-wrap items-center gap-1.5">
+                  <span
+                    className={`rounded-full border px-3 py-1.5 text-[10px] font-bold uppercase tracking-[0.12em] backdrop-blur-md ${
+                      item.category.includes('ROADNEX')
+                        ? 'border-amber-300 bg-amber-500 text-white shadow-xs'
+                        : 'border-white/40 bg-slate-950/60 text-white'
+                    }`}
+                  >
+                    {item.category}
+                  </span>
+                  {item.badge && (
+                    <span className="hidden rounded-full border border-white/30 bg-slate-950/60 px-2.5 py-1 text-[9px] font-semibold tracking-wide text-white backdrop-blur-md sm:inline-block">
+                      {item.badge}
+                    </span>
+                  )}
+                </div>
 
                 {/* Hover icon */}
                 <span

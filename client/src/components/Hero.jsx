@@ -1,5 +1,54 @@
 
-import { BUSINESS } from '../site.js';
+import { useState } from 'react';
+import { BUSINESS, BRAND } from '../site.js';
+
+const HERO_SHOWCASE = [
+  {
+    id: 'infra',
+    title: 'Entrance Security Bump & Barrier Infrastructure',
+    shortName: 'Roadway Infrastructure',
+    category: 'ROADNEX™ Road Safety',
+    badge: 'Toll & Checkpoint Setup',
+    src: '/photos/roadnex-hero-infrastructure.jpg',
+    specs: 'Modular Heavy Rubber Speed Breakers · High-Tonnage Crash Tested',
+  },
+  {
+    id: 'cones',
+    title: 'High-Visibility Prismatic Reflective Traffic Cones',
+    shortName: 'Traffic Cones',
+    category: 'ROADNEX™ Flagship',
+    badge: 'Dual 3M Reflective Sleeves',
+    src: '/photos/roadnex-traffic-cones.jpg',
+    specs: '750mm / 1000mm Virgin Rubber · Hexagonal Wind-Stable Base',
+  },
+  {
+    id: 'speedbump',
+    title: 'Modular 40-Ton Rubber Speed Bumps with Cat-Eyes',
+    shortName: 'Speed Bumps',
+    category: 'ROADNEX™ Traffic Calming',
+    badge: '40-Ton Axle Load Rating',
+    src: '/photos/roadnex-speed-bump.jpg',
+    specs: 'Embedded Glass Reflectors · Non-Skid High-Traction Diamond Grip',
+  },
+  {
+    id: 'mirror',
+    title: 'Outdoor Polycarbonate Convex Safety Traffic Mirrors',
+    shortName: 'Convex Mirrors',
+    category: 'ROADNEX™ Blind Turn Safety',
+    badge: 'Unbreakable Polycarbonate',
+    src: '/photos/roadnex-convex-mirror.jpg',
+    specs: '800mm / 1000mm Hooded UV ABS · 130° Viewing Arc & Steel Clamp',
+  },
+  {
+    id: 'solar',
+    title: 'Solar LED Heavy Aluminium Road Studs (Highway Cat Eyes)',
+    shortName: 'Solar Road Studs',
+    category: 'ROADNEX™ Highway Guidance',
+    badge: 'Monocrystalline Solar',
+    src: '/photos/roadnex-solar-stud.jpg',
+    specs: '20-Ton Vehicle Compression · Dual Direction Ultra-Bright LEDs',
+  },
+];
 
 function Stat({ value, suffix = '', label, sub }) {
   return (
@@ -65,6 +114,8 @@ function Stat({ value, suffix = '', label, sub }) {
 }
 
 export default function Hero({ products = [] }) {
+  const [selectedHeroIndex, setSelectedHeroIndex] = useState(0);
+  const currentHero = HERO_SHOWCASE[selectedHeroIndex];
   const categoryCount = new Set(
     products.map((p) => p.category)
   ).size;
@@ -508,17 +559,18 @@ export default function Hero({ products = [] }) {
                 shadow-slate-900/10
               "
             >
-              {/* Image */}
+              {/* Image & Active Showcase */}
               <div className="relative aspect-video overflow-hidden bg-slate-100">
                 <img
-                  src="/photos/fiable-hero-equipment.jpg"
-                  alt="Vikash Traders Commercial Equipment Showcase"
+                  key={currentHero.id}
+                  src={currentHero.src}
+                  alt={currentHero.title}
                   className="
                     h-full
                     w-full
                     object-cover
-                    transition-transform
-                    duration-700
+                    transition-all
+                    duration-500
                     ease-out
                     group-hover:scale-105
                   "
@@ -531,33 +583,113 @@ export default function Hero({ products = [] }) {
                     absolute
                     inset-0
                     bg-linear-to-t
-                    from-slate-950/25
-                    via-transparent
+                    from-slate-950/40
+                    via-slate-950/10
                     to-transparent
                   "
                 />
 
-                {/* Image badge */}
+                {/* Brand & Category Badge */}
                 <div
                   className="
                     absolute
-                    left-4
-                    top-4
-                    rounded-full
-                    border
-                    border-white/40
-                    bg-slate-950/55
-                    px-3
-                    py-1.5
-                    text-[10px]
-                    font-bold
-                    uppercase
-                    tracking-[0.12em]
-                    text-white
-                    backdrop-blur-md
+                    left-3
+                    top-3
+                    flex
+                    flex-wrap
+                    items-center
+                    gap-2
+                    sm:left-4
+                    sm:top-4
                   "
                 >
-                  Industrial Equipment
+                  <span
+                    className="
+                      rounded-full
+                      border
+                      border-amber-300
+                      bg-amber-500
+                      px-3
+                      py-1
+                      text-[10px]
+                      font-black
+                      uppercase
+                      tracking-[0.14em]
+                      text-white
+                      shadow-md
+                    "
+                  >
+                    ROADNEX™ Brand
+                  </span>
+
+                  <span
+                    className="
+                      hidden
+                      rounded-full
+                      border
+                      border-white/30
+                      bg-slate-950/60
+                      px-3
+                      py-1
+                      text-[10px]
+                      font-semibold
+                      text-white
+                      backdrop-blur-md
+                      sm:inline-block
+                    "
+                  >
+                    {currentHero.badge}
+                  </span>
+                </div>
+
+                {/* Image Overlay Title */}
+                <div
+                  className="
+                    absolute
+                    inset-x-0
+                    bottom-0
+                    p-3.5
+                    sm:p-4
+                  "
+                >
+                  <span className="block text-xs font-bold text-amber-300 sm:text-sm">
+                    {currentHero.title}
+                  </span>
+                  <span className="mt-0.5 block text-[11px] text-slate-200">
+                    {currentHero.specs}
+                  </span>
+                </div>
+              </div>
+
+              {/* ROADNEX Interactive Equipment Thumbnail Selector */}
+              <div className="border-t border-slate-200 bg-slate-50/80 p-2 sm:p-2.5">
+                <div className="flex items-center justify-between gap-1.5 overflow-x-auto pb-1 scrollbar-none sm:gap-2">
+                  {HERO_SHOWCASE.map((item, idx) => {
+                    const isSelected = selectedHeroIndex === idx;
+                    return (
+                      <button
+                        type="button"
+                        key={item.id}
+                        onClick={() => setSelectedHeroIndex(idx)}
+                        className={`group/thumb flex shrink-0 items-center gap-2 rounded-xl border p-1.5 text-left transition-all duration-200 ${
+                          isSelected
+                            ? 'border-amber-500 bg-amber-500/10 shadow-xs ring-1 ring-amber-400'
+                            : 'border-slate-200 bg-white hover:border-amber-300 hover:bg-amber-50/50'
+                        }`}
+                      >
+                        <div className="h-9 w-9 shrink-0 overflow-hidden rounded-lg bg-slate-100 ring-1 ring-slate-200">
+                          <img
+                            src={item.src}
+                            alt={item.shortName}
+                            className="h-full w-full object-cover"
+                          />
+                        </div>
+                        <span className="hidden pr-2 text-xs font-bold text-slate-800 xl:inline-block">
+                          {item.shortName}
+                        </span>
+                      </button>
+                    );
+                  })}
                 </div>
               </div>
 
@@ -566,12 +698,12 @@ export default function Hero({ products = [] }) {
                 className="
                   flex
                   flex-col
-                  gap-4
+                  gap-3
                   border-t
                   border-slate-200
                   bg-white
                   px-4
-                  py-4
+                  py-3.5
                   sm:flex-row
                   sm:items-center
                   sm:justify-between
@@ -579,27 +711,31 @@ export default function Hero({ products = [] }) {
                 "
               >
                 <div className="min-w-0">
-                  <strong
-                    className="
-                      block
-                      text-sm
-                      font-bold
-                      text-slate-950
-                    "
-                  >
-                    Lunkaransar Central Facility
-                  </strong>
+                  <div className="flex items-center gap-2">
+                    <span className="h-2 w-2 rounded-full bg-emerald-500" />
+                    <strong
+                      className="
+                        block
+                        text-xs
+                        font-bold
+                        text-slate-950
+                        sm:text-sm
+                      "
+                    >
+                      ROADNEX™ In-Stock · Lunkaransar Central Facility
+                    </strong>
+                  </div>
 
                   <span
                     className="
-                      mt-1
+                      mt-0.5
                       block
-                      text-xs
+                      text-[11px]
                       leading-5
                       text-slate-500
                     "
                   >
-                    Ready for Dispatch · Verified In-Stock
+                    Direct Bulk Dispatch · Certified Highway &amp; Industrial Standards
                   </span>
                 </div>
 
