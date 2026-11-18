@@ -32,7 +32,7 @@ const HERO_SHOWCASE = [
   },
   {
     id: 'mirror',
-    title: 'Outdoor Polycarbonate Convex Safety Traffic Mirrors',
+    title: 'Wide-Angle Polycarbonate Convex Safety Traffic Mirrors',
     shortName: 'Convex Mirrors',
     category: 'ROADNEX™ Blind Turn Safety',
     badge: 'Unbreakable Polycarbonate',
@@ -269,7 +269,7 @@ export default function Hero({ products = [] }) {
             >
               Direct institutional supplier of <strong className="font-semibold text-slate-900">ROADNEX™ road safety equipment</strong>,
               heavy-duty HDPE waste containers, mechanized cleaning machines,
-              outdoor gym stations, and site machinery with verified GST tax invoicing.
+              queue guidance stanchions, and site machinery with verified GST tax invoicing.
             </p>
 
             {/* CTAs */}

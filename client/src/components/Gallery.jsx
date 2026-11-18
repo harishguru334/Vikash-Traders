@@ -81,20 +81,6 @@ const galleryPhotos = [
       'Virgin HDPE commercial waste bins designed for extreme climate resistance and public municipal durability.',
   },
   {
-    src: '/photos/open-gym-park.svg',
-    category: 'Gym',
-    title: 'Public Park Fitness Stations',
-    caption:
-      'Outdoor gym air walkers and waist twisters installed in civic park facilities.',
-  },
-  {
-    src: '/photos/concrete-mixer-dispatch.svg',
-    category: 'Construction',
-    title: 'Civil Construction Machinery',
-    caption:
-      'Portable and semi-automatic concrete mixers ready for road and construction transport.',
-  },
-  {
     src: '/photos/ride-on-scrubber.svg',
     category: 'Equipment',
     title: 'Industrial Floor Cleaning Fleet',
@@ -109,8 +95,6 @@ const categories = [
   'Stockyard',
   'Bins',
   'Equipment',
-  'Gym',
-  'Construction',
 ];
 
 export default function Gallery() {

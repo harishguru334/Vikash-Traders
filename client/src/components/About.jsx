@@ -127,7 +127,7 @@ export default function About() {
               our flagship road safety division under our applied proprietary brand{' '}
               <strong className="font-semibold text-slate-900">ROADNEX™</strong>, alongside
               premium commercial plastic dustbins, mechanized floor cleaning machines,
-              open-gym fitness stations, and civil infrastructure equipment.
+              queue management systems, and institutional facility supplies.
             </p>
 
             {/* Secondary paragraph */}

@@ -197,7 +197,7 @@ export default function IndustriesAdmin() {
                   rows="3" 
                   value={form.description} 
                   onChange={(e) => setForm({ ...form, description: e.target.value })} 
-                  placeholder="Public park gyms, waste segregation containers, and civic sanitation..." 
+                  placeholder="ROADNEX road safety solutions, waste segregation containers, and civic sanitation..." 
                   required 
                 />
               </div>

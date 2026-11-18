@@ -186,7 +186,7 @@ export default function GalleryAdmin() {
                   className="input" 
                   value={form.title} 
                   onChange={(e) => setForm({ ...form, title: e.target.value })} 
-                  placeholder="e.g. Park Gym Double Air Walker Installation" 
+                  placeholder="e.g. ROADNEX Highway Speed Bump & Traffic Cone Setup" 
                   required 
                 />
               </div>

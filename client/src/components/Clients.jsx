@@ -72,7 +72,7 @@ const clientOrganizations = [
     dept: 'Urban Local Bodies · Haryana',
     tag: 'CIVIC ADMINISTRATION',
     logo: '/clients/mc-panchkula.jpg',
-    supplies: 'Solid Waste Management Bins, Road Safety & Park Fitness Stations',
+    supplies: 'Solid Waste Management Bins, Road Safety Items & Municipal Sanitation',
   },
   {
     name: 'Department of Fisheries',
@@ -104,12 +104,12 @@ const sectors = [
   {
     name: 'Municipal Corporations & ULBs',
     tag: 'CIVIC SANITATION',
-    desc: 'Nagar Palikas & Urban Local Bodies procuring commercial HDPE dustbins, street sweepers, community open-gym equipment, and tender documentation.',
+    desc: 'Nagar Palikas & Urban Local Bodies procuring commercial HDPE dustbins, street sweepers, civic waste infrastructure, and tender documentation.',
   },
   {
     name: 'Hospitals & Medical Facilities',
     tag: 'HEALTH HYGIENE',
-    desc: 'Healthcare centres maintaining sterile hygiene with biomedical pedal bins, scrubber driers, wet/dry vacuums, and sensory automatic shoe shiners.',
+    desc: 'Healthcare centres maintaining sterile hygiene with biomedical pedal bins, scrubber driers, wet/dry vacuums, and institutional sanitation gear.',
   },
   {
     name: 'Industrial Plants & Mega Facilities',
@@ -499,28 +499,25 @@ export default function Clients() {
             {sectors.map((sector, index) => (
               <article
                 key={sector.name}
-                className={`group relative overflow-hidden rounded-3xl border bg-white p-6 shadow-xs transition-all duration-300 hover:-translate-y-1 hover:shadow-xl sm:p-7 ${
-                  sector.isPrimary
+                className={`group relative overflow-hidden rounded-3xl border bg-white p-6 shadow-xs transition-all duration-300 hover:-translate-y-1 hover:shadow-xl sm:p-7 ${sector.isPrimary
                     ? 'border-amber-300 ring-2 ring-amber-400/20'
                     : 'border-slate-200 hover:border-emerald-200'
-                }`}
+                  }`}
               >
                 {/* Top accent */}
                 <div
-                  className={`absolute inset-x-0 top-0 h-1.5 ${
-                    sector.isPrimary
+                  className={`absolute inset-x-0 top-0 h-1.5 ${sector.isPrimary
                       ? 'bg-linear-to-r from-amber-500 to-orange-500'
                       : 'bg-linear-to-r from-emerald-400 via-emerald-600 to-teal-500 opacity-0 group-hover:opacity-100'
-                  } transition-opacity duration-300`}
+                    } transition-opacity duration-300`}
                 />
 
                 <div className="flex items-start justify-between gap-4">
                   <div
-                    className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl transition-all duration-300 ${
-                      sector.isPrimary
+                    className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl transition-all duration-300 ${sector.isPrimary
                         ? 'bg-amber-100 text-amber-700 group-hover:bg-amber-600 group-hover:text-white'
                         : 'bg-emerald-50 text-emerald-700 group-hover:bg-emerald-600 group-hover:text-white'
-                    }`}
+                      }`}
                   >
                     <div className="h-6 w-6">{sectorIcons[sector.name]}</div>
                   </div>
@@ -532,9 +529,8 @@ export default function Clients() {
 
                 <div className="mt-6">
                   <p
-                    className={`text-xs font-bold uppercase tracking-[0.16em] ${
-                      sector.isPrimary ? 'text-amber-700' : 'text-emerald-600'
-                    }`}
+                    className={`text-xs font-bold uppercase tracking-[0.16em] ${sector.isPrimary ? 'text-amber-700' : 'text-emerald-600'
+                      }`}
                   >
                     {sector.tag}
                   </p>

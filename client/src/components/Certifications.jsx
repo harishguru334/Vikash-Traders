@@ -124,8 +124,8 @@ export default function About() {
             >
               Since {BUSINESS.gstYear}, Vikash Traders has been at the forefront of
               supplying premium-quality commercial plastic dustbins, mechanized
-              floor cleaning machines, open-gym exercise stations, and construction
-              equipment that help create cleaner, healthier and more sustainable
+              floor cleaning machines, queue guidance stands, and ROADNEX™ road safety equipment
+              that help create cleaner, safer and more sustainable
               environments across Rajasthan.
             </p>
 

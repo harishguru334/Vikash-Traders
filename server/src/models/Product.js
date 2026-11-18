@@ -1,13 +1,10 @@
 import mongoose from 'mongoose';
 
 export const CATEGORIES = [
-  'Outdoor Exercise Gym Equipment',
+  'Road Safety Equipment (ROADNEX™)',
   'Plastic Dust Bins',
   'Cleaning Machines',
   'Queue Stands',
-  'Concrete Mixer Machines',
-  'Concrete Test Hammer',
-  'Shoe Polish Machine',
   'Scrubbing & Polishing Machine',
 ];
 

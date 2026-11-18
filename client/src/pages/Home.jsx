@@ -20,6 +20,25 @@ import Contact from '../components/Contact.jsx';
 import Footer from '../components/Footer.jsx';
 import WhatsAppFloat from '../components/WhatsAppFloat.jsx';
 
+const isExcludedProduct = (p) => {
+  const cat = (p?.category || '').toLowerCase();
+  const name = (p?.name || '').toLowerCase();
+  return (
+    cat.includes('outdoor exercise') ||
+    cat.includes('gym') ||
+    cat.includes('shoe polish') ||
+    cat.includes('concrete mixer') ||
+    cat.includes('concrete test hammer') ||
+    cat.includes('agriculture') ||
+    name.includes('gym') ||
+    name.includes('air walker') ||
+    name.includes('shoe polish') ||
+    name.includes('concrete mixer') ||
+    name.includes('test hammer') ||
+    name.includes('agriculture')
+  );
+};
+
 export default function Home() {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -34,7 +53,8 @@ export default function Home() {
       .then((res) => {
         if (alive) {
           if (Array.isArray(res.data) && res.data.length > 0) {
-            setProducts(res.data);
+            const clean = res.data.filter((p) => !isExcludedProduct(p));
+            setProducts(clean.length > 0 ? clean : DEFAULT_PRODUCTS);
           } else {
             setProducts(DEFAULT_PRODUCTS);
           }

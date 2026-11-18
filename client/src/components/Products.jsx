@@ -6,17 +6,38 @@ import { assetUrl } from '../api/client.js';
 export default function Products({ products, loading, error, onEnquire }) {
   const [active, setActive] = useState('All');
 
+  const cleanProducts = useMemo(() => {
+    return (products || []).filter((p) => {
+      const cat = (p?.category || '').toLowerCase();
+      const name = (p?.name || '').toLowerCase();
+      return (
+        !cat.includes('outdoor exercise') &&
+        !cat.includes('gym') &&
+        !cat.includes('shoe polish') &&
+        !cat.includes('concrete mixer') &&
+        !cat.includes('concrete test hammer') &&
+        !cat.includes('agriculture') &&
+        !name.includes('air walker') &&
+        !name.includes('twister') &&
+        !name.includes('shoe polish') &&
+        !name.includes('concrete mixer') &&
+        !name.includes('test hammer') &&
+        !name.includes('agriculture')
+      );
+    });
+  }, [products]);
+
   const categories = useMemo(() => {
     const seen = [];
 
-    products.forEach((p) => {
+    cleanProducts.forEach((p) => {
       if (!seen.includes(p.category)) {
         seen.push(p.category);
       }
     });
 
     return seen;
-  }, [products]);
+  }, [cleanProducts]);
 
   const shown =
     active === 'All'
@@ -122,7 +143,7 @@ export default function Products({ products, loading, error, onEnquire }) {
         )}
 
         {/* Empty state */}
-        {!loading && !error && products.length === 0 && (
+        {!loading && !error && cleanProducts.length === 0 && (
           <div className="mt-10 rounded-2xl border border-slate-200 bg-slate-50 p-10 text-center sm:p-12">
             <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-white text-slate-500 shadow-sm ring-1 ring-slate-200">
               <svg
@@ -150,7 +171,7 @@ export default function Products({ products, loading, error, onEnquire }) {
           </div>
         )}
 
-        {products.length > 0 && (
+        {cleanProducts.length > 0 && (
           <>
             {/* Category filters */}
             <div
@@ -171,11 +192,11 @@ export default function Products({ products, loading, error, onEnquire }) {
                   role="tab"
                   aria-selected={active === 'All'}
                 >
-                  All Categories ({products.length})
+                  All Categories ({cleanProducts.length})
                 </button>
 
                 {categories.map((c) => {
-                  const count = products.filter(
+                  const count = cleanProducts.filter(
                     (p) => p.category === c
                   ).length;
 
@@ -203,7 +224,7 @@ export default function Products({ products, loading, error, onEnquire }) {
             {/* Product category blocks */}
             <div className="mt-12 space-y-14 sm:mt-14 sm:space-y-16">
               {shown.map((category) => {
-                const items = products.filter(
+                const items = cleanProducts.filter(
                   (p) => p.category === category
                 );
 

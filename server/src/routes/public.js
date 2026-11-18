@@ -120,7 +120,7 @@ router.post('/enquiries', enquiryLimiter, async (req, res) => {
 
     res.status(201).json({ ok: true });
   } catch {
-    res.status(500).json({ error: 'Could not send your enquiry. Call +91 80478 26899 instead.' });
+    res.status(500).json({ error: 'Could not send your enquiry. Call +91 88242 32797 instead.' });
   }
 });
 

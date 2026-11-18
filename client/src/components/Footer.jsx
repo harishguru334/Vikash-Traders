@@ -163,7 +163,7 @@ export default function Footer({ products = [] }) {
               "
             >
               Direct supplier and stockyard of ROADNEX™ road safety solutions,
-              commercial plastic dustbins, cleaning machines, open-gym stations,
+              commercial plastic dustbins, cleaning machines, queue management systems,
               and project equipment across India.
             </p>
 

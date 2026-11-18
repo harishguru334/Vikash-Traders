@@ -16,8 +16,8 @@ import WhyUsAdmin from './admin/WhyUsAdmin.jsx';
 import IndustriesAdmin from './admin/IndustriesAdmin.jsx';
 import GalleryAdmin from './admin/GalleryAdmin.jsx';
 import FaqsAdmin from './admin/FaqsAdmin.jsx';
-import ContactAdmin from './admin/ContactAdmin.jsx';
 import SeoAdmin from './admin/SeoAdmin.jsx';
+import ContactAdmin from './admin/ContactAdmin.jsx';
 
 import UsersAdmin from './admin/UsersAdmin.jsx';
 import RolesAdmin from './admin/RolesAdmin.jsx';

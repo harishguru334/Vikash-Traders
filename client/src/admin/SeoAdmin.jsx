@@ -90,7 +90,7 @@ export default function SeoAdmin() {
                 rows="3" 
                 value={form.metaDescription} 
                 onChange={(e) => setForm({ ...form, metaDescription: e.target.value })} 
-                placeholder="Direct B2B supplier of commercial cleaning machines, outdoor exercise gym equipment, HDPE plastic dustbins..." 
+                placeholder="Direct B2B supplier of ROADNEX road safety equipment, commercial cleaning machines, HDPE plastic dustbins..." 
                 required 
               />
               <span style={{ fontSize: '0.75rem', color: '#64748b' }}>Recommended length: 150–160 characters ({form.metaDescription.length} chars)</span>
@@ -103,7 +103,7 @@ export default function SeoAdmin() {
                 className="input" 
                 value={form.keywords} 
                 onChange={(e) => setForm({ ...form, keywords: e.target.value })} 
-                placeholder="outdoor gym equipment, plastic dustbins, queue stands, concrete mixer" 
+                placeholder="road safety equipment, traffic cones, speed bump, plastic dustbins, queue stands" 
               />
             </div>
 
@@ -166,7 +166,7 @@ export default function SeoAdmin() {
                 {form.title || 'Vikash Traders — Commercial & Industrial Equipment Sourcing'}
               </div>
               <div style={{ color: '#4d5156', fontSize: '0.82rem', lineHeight: 1.45 }}>
-                {form.metaDescription || 'Direct B2B supplier of commercial cleaning machines, outdoor exercise gym equipment...'}
+                {form.metaDescription || 'Direct B2B supplier of ROADNEX road safety products, cleaning machines, dustbins...'}
               </div>
             </div>
 

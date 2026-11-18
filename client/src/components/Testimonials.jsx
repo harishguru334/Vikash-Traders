@@ -11,7 +11,7 @@ const commitments = [
   {
     title: 'Accurate Specifications & Handover',
     desc:
-      'What you order is what is dispatched: verified liter capacities for bins, gauge thickness for outdoor gym steel, and tested electric motors for machines.',
+      'What you order is what is dispatched: verified liter capacities for bins, high-intensity reflectivity for ROADNEX™ road safety, and tested electric motors for machines.',
   },
   {
     title: 'Direct Stockyard Transparency',

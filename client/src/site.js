@@ -5,9 +5,9 @@ export const BUSINESS = {
   type: 'Proprietorship — Trader & Retailer',
   gst: '08LLOPK9460L1Z0',
   gstYear: 2022,
-  phone: '+91 80478 26899',
-  phoneDial: '+918047826899',
-  whatsapp: '918047826899',
+  phone: '+91 88242 32797',
+  phoneDial: '+918824232797',
+  whatsapp: '918824232797',
   address: 'Kankarwala, Lunkaransar, Bikaner, Rajasthan',
   hours: 'Monday to Saturday, 9:00 AM – 7:00 PM',
 };
@@ -42,11 +42,7 @@ export const CORE_CATEGORIES = [
   'Road Safety Equipment (ROADNEX™)',
   'Plastic Dust Bins',
   'Cleaning Machines',
-  'Outdoor Exercise Gym Equipment',
   'Queue Stands',
-  'Concrete Mixer Machines',
-  'Concrete Test Hammer',
-  'Shoe Polish Machine',
   'Scrubbing & Polishing Machine',
 ];
 
@@ -75,7 +71,7 @@ export const DEFAULT_PRODUCTS = [
   },
   {
     _id: 'roadnex-3',
-    name: 'ROADNEX 800mm / 1000mm Outdoor Polycarbonate Convex Mirror',
+    name: 'ROADNEX 800mm / 1000mm Wide-Angle Polycarbonate Convex Mirror',
     category: 'Road Safety Equipment (ROADNEX™)',
     price: 2450,
     unit: 'piece',
@@ -189,15 +185,6 @@ export const DEFAULT_PRODUCTS = [
     unit: 'piece',
     description: 'High-speed floor scrubber with parabolic suction squeegee for hospitals, railway platforms, and commercial atriums.',
     imageUrl: '/photos/ride-on-scrubber.svg',
-  },
-  {
-    _id: 'gym-1',
-    name: 'Institutional Double Air Walker Outdoor Gym Station',
-    category: 'Outdoor Exercise Gym Equipment',
-    price: 16500,
-    unit: 'set',
-    description: 'Heavy B-class GI pipe construction with sealed self-lubricating bearings and dual-coat PU powder finish for civic parks.',
-    imageUrl: '/photos/open-gym-park.svg',
   },
   {
     _id: 'queue-1',

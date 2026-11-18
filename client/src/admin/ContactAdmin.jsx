@@ -78,7 +78,7 @@ export default function ContactAdmin() {
                 className="input" 
                 value={form.phone} 
                 onChange={(e) => setForm({ ...form, phone: e.target.value })} 
-                placeholder="+91 80478 26899" 
+                placeholder="+91 88242 32797" 
                 required 
               />
             </div>
@@ -90,7 +90,7 @@ export default function ContactAdmin() {
                 className="input" 
                 value={form.whatsapp} 
                 onChange={(e) => setForm({ ...form, whatsapp: e.target.value })} 
-                placeholder="+91 98765 43210" 
+                placeholder="+91 88242 32797" 
                 required 
               />
             </div>

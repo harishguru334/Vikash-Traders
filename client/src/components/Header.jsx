@@ -24,34 +24,10 @@ const PRODUCT_FAMILIES = [
     target: 'Cleaning Machines',
   },
   {
-    name: 'Outdoor Gym Equipment',
-    desc: 'Waist twisters, air walkers & park stations',
-    icon: '/icons/cat-gym.svg',
-    target: 'Outdoor Exercise Gym Equipment',
-  },
-  {
     name: 'Queue Stands',
     desc: 'Stainless steel stanchions with retractable belts',
     icon: '/icons/cat-queuestands.svg',
     target: 'Queue Stands',
-  },
-  {
-    name: 'Concrete Mixer Machines',
-    desc: 'Portable & semi-automatic construction mixers',
-    icon: '/icons/cat-concretemixer.svg',
-    target: 'Concrete Mixer Machines',
-  },
-  {
-    name: 'Concrete Test Hammer',
-    desc: 'Schmidt rebound hammer for compressive strength',
-    icon: '/icons/cat-testhammer.svg',
-    target: 'Concrete Test Hammer',
-  },
-  {
-    name: 'Shoe Polish Machine',
-    desc: 'Dual-buffer sensor automatic commercial shiner',
-    icon: '/icons/cat-shoepolish.svg',
-    target: 'Shoe Polish Machine',
   },
   {
     name: 'Scrubbing & Polishing Machine',

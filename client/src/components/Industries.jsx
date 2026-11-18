@@ -13,34 +13,34 @@ const industries = [
     body: 'Sanitation departments buying commercial bins, street sweepers and scrubbers in volume with verified tender paperwork.',
   },
   {
-    title: 'Construction Sites & Civil Projects',
+    title: 'Work Zones & Infrastructure Projects',
     badge: 'Heavy Duty',
     icon: 'construction',
-    body: 'Contractors sourcing semi-automatic concrete mixers, compressive test hammers and queue stanchions for active sites.',
+    body: 'Contractors sourcing ROADNEX™ water barriers, traffic cones, reflective delineators and crowd control stanchions for active project sites.',
   },
   {
     title: 'Hospitals & Medical Facilities',
     badge: 'Sanitation',
     icon: 'hospital',
-    body: 'Healthcare institutions requiring colour-coded biomedical waste bins, wet & dry vacuums and automatic shoe polishers.',
+    body: 'Healthcare institutions requiring colour-coded biomedical waste bins, wet & dry vacuums and hygiene maintenance stations.',
   },
   {
-    title: 'Public Parks & Sports Grounds',
+    title: 'Public Parks & Civic Grounds',
     badge: 'Civic Amenity',
     icon: 'park',
-    body: 'Gram panchayats and municipal councils installing outdoor open-gym air walkers, waist twisters and robust public park equipment.',
+    body: 'Municipal corporations and civic bodies installing high-capacity waste collection bins, pathway signage and maintenance gear.',
   },
   {
     title: 'Commercial Complexes & Malls',
     badge: 'Facility Care',
     icon: 'mall',
-    body: 'Property managers deploying floor scrubber driers, entrance queue stands, and automatic shoe shiners for daily operations.',
+    body: 'Property managers deploying floor scrubber driers, entrance queue stands, and mechanized cleaning systems for daily operations.',
   },
   {
     title: 'Educational Institutions & Campuses',
     badge: 'Campus Care',
     icon: 'education',
-    body: 'Colleges and residential schools ordering high-capacity open-top dustbins, campus sweepers and outdoor fitness stations.',
+    body: 'Colleges and residential schools ordering high-capacity open-top dustbins, campus sweepers and crowd queue stanchions.',
   },
 ];
 
